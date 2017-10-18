@@ -115,13 +115,13 @@ public class LibraryModel {
 					oneBook = false;
 
 				} else {
-					moreThanOneAuthor = false;
 					oneBook = true;
 				}
 
 				if(oneBook && loopedOnce) {
 					output.append("\t\tAuthor");
 					if(moreThanOneAuthor) {
+						moreThanOneAuthor = false;
 						output.append("s");
 					}
 
